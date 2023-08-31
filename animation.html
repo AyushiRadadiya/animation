@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <style>
+            .box
+            {
+                background-color: black;
+                color: white;
+                height: 150px;
+                width: 150px;
+                font-size: 20px;
+                position: relative;
+                animation-name: ab;
+                animation-duration: 4s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+            }
+            @keyframes ab
+            {
+                0%
+                {
+                    left:0px;
+                }
+                50%
+                {
+                    left: 300px;
+                    background-color: blue;
+                    font-size: 30px;
+                }
+                75%
+                {
+                    left: 600px;
+                    background-color: green;
+                    font-size: 40px;
+                }
+                100%
+                {
+                    left: 870px;
+                    background-color: blueviolet;
+                    font-size: 40px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">SPEED</div>
+    </body>
+</html>
